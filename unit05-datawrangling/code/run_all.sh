@@ -17,5 +17,8 @@ python code/03_build_panel.py > output/03_build_panel.log
 echo "4. Linked tables: collisions, vehicles and casualties (2024)"
 python code/04_linked_tables.py > output/04_linked_tables.log
 
+echo "5. Figures from the panel (output/figures/)"
+python code/05_figures.py > output/05_figures.log
+
 echo "Done. Logs and data are in output/:"
 ls output

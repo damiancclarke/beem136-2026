@@ -1,6 +1,6 @@
 # Unit 5: Data wrangling
 
-Run everything from this folder (`cd unit05-datawrangling`). You need `pandas` and `openpyxl` (`pip install pandas openpyxl`).
+Run everything from this folder (`cd unit05-datawrangling`). You need `pandas`, `openpyxl` and `matplotlib` (`pip install pandas openpyxl matplotlib`).
 
 **The question:** did Wales's default 20mph speed limit (17 September 2023) reduce road collisions, compared with England? We build a panel with one row per Great Britain local authority and year, 2022 to 2025: 350 × 4 = 1,400 rows.
 
@@ -17,7 +17,8 @@ Run everything from this folder (`cd unit05-datawrangling`). You need `pandas` a
 | `code/02_collisions.py` | Collisions: append four years, collapse to local authority × year |
 | `code/03_build_panel.py` | Merge everything, fixing local authority codes that changed |
 | `code/04_linked_tables.py` | Collisions, vehicles and casualties: three traps when joining tables |
-| `code/run_all.sh` | Master script: runs 01 to 04 in order |
+| `code/05_figures.py` | Figures from the panel: from pandas defaults to a figure for a paper, plus some bad examples |
+| `code/run_all.sh` | Master script: runs 01 to 05 in order |
 | `code/exercise.py` | The class exercise |
 
 To build everything (about 15 seconds):
@@ -26,4 +27,4 @@ To build everything (about 15 seconds):
 bash code/run_all.sh
 ```
 
-This creates `output/panel.csv` (1,400 rows), plus a log of what each script printed in `output/`. The files in `data/raw/` are exactly as published. **Never edit these**. Change to data only happens in code.
+This creates `output/panel.csv` (1,400 rows), the figures in `output/figures/`, plus a log of what each script printed in `output/`. The files in `data/raw/` are exactly as published. **Never edit these**. Change to data only happens in code.
